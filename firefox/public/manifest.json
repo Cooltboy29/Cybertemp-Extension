@@ -14,11 +14,19 @@
     "<all_urls>"
   ],
   "background": {
-    "service_worker": "service-worker.js"
+    "scripts": [
+      "service-worker.js"
+    ]
   },
   "action": {
     "default_popup": "index.html",
     "default_title": "CyberTemp"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "cybertemp@extension",
+      "strict_min_version": "109.0"
+    }
   },
   "content_scripts": [
     {
