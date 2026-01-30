@@ -600,7 +600,6 @@ function showLoginToast() {
     document.body.appendChild(toast);
 
     // Login button handler
-    const loginBtn = toast.querySelector('#cybertemp-login-btn');
     loginBtn.addEventListener('click', () => {
         window.open('https://cybertemp.xyz/auth/login?source=extension&action=auth', '_blank');
         toast.remove();
